@@ -124,3 +124,10 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+AUTH_USER_MODEL = "accounts.User"
+# accountsディレクトリ内にUserというモデルを作成したため、accounts.Userと記述
+# もし、MyUserという名前でモデルを作成した場合は、accounts.MyUserと記述する
+
+# 最終課題ではならないが、usersというディレクトリ内にUserというモデルを作成した場合は、
+# AUTH_USER_MODEL = "users.User"と記述する
